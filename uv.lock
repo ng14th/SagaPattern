@@ -128,6 +128,7 @@ dependencies = [
     { name = "asyncpg" },
     { name = "fastapi", extra = ["standard"] },
     { name = "faststream" },
+    { name = "gunicorn" },
     { name = "pottery" },
     { name = "pydantic" },
     { name = "pydantic-settings" },
@@ -137,6 +138,7 @@ dependencies = [
     { name = "tortoise-orm" },
     { name = "ujson" },
     { name = "unidecode" },
+    { name = "uvicorn", extra = ["standard"] },
     { name = "uvloop" },
 ]
 
@@ -147,6 +149,7 @@ requires-dist = [
     { name = "asyncpg", specifier = ">=0.30.0" },
     { name = "fastapi", extras = ["standard"], specifier = ">=0.115.12" },
     { name = "faststream", specifier = ">=0.5.42" },
+    { name = "gunicorn", specifier = ">=23.0.0" },
     { name = "pottery", specifier = ">=3.0.1" },
     { name = "pydantic", specifier = ">=2.11.5" },
     { name = "pydantic-settings", specifier = ">=2.9.1" },
@@ -156,6 +159,7 @@ requires-dist = [
     { name = "tortoise-orm", specifier = "==0.20.0" },
     { name = "ujson", specifier = ">=5.10.0" },
     { name = "unidecode", specifier = ">=1.4.0" },
+    { name = "uvicorn", extras = ["standard"], specifier = ">=0.34.2" },
     { name = "uvloop", specifier = ">=0.21.0" },
 ]
 
@@ -300,6 +304,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/57/d0/dc00fcdb5cfc128cf6305f9b9aa2cf8bc76333d2042fb2e36c45c1a600ba/faststream-0.5.42.tar.gz", hash = "sha256:7f115dc4c9eb53a76a5ee1194191179f8161ed678ad0cb744ace2743bfd5002e", size = 296482, upload-time = "2025-05-22T18:49:46.542Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ee/e1/51f479c153990b3ad2625e0191fbc0ce4fea016c0c65f6ffc464bb980d18/faststream-0.5.42-py3-none-any.whl", hash = "sha256:dbbbbca36bc22ac017c0cca2acffb81dc6569c1813055367bf7acd6c46c6cbb9", size = 396869, upload-time = "2025-05-22T18:49:44.354Z" },
+]
+
+[[package]]
+name = "gunicorn"
+version = "23.0.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "packaging" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/34/72/9614c465dc206155d93eff0ca20d42e1e35afc533971379482de953521a4/gunicorn-23.0.0.tar.gz", hash = "sha256:f014447a0101dc57e294f6c18ca6b40227a4c90e9bdb586042628030cba004ec", size = 375031, upload-time = "2024-08-10T20:25:27.378Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/cb/7d/6dac2a6e1eba33ee43f318edbed4ff29151a49b5d37f080aad1e6469bca4/gunicorn-23.0.0-py3-none-any.whl", hash = "sha256:ec400d38950de4dfd418cff8328b2c8faed0edb0d517d3394e457c317908ca4d", size = 85029, upload-time = "2024-08-10T20:25:24.996Z" },
 ]
 
 [[package]]
@@ -548,6 +564,15 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/2b/b0/fdf4c73ad1c55e0f4dbbf2aa59dd37037334091f9a4961646d2b7ac91a86/multidict-6.4.4-cp313-cp313t-win32.whl", hash = "sha256:3312f63261b9df49be9d57aaa6abf53a6ad96d93b24f9cc16cf979956355ce6e", size = 41913, upload-time = "2025-05-19T14:16:03.199Z" },
     { url = "https://files.pythonhosted.org/packages/8e/92/27989ecca97e542c0d01d05a98a5ae12198a243a9ee12563a0313291511f/multidict-6.4.4-cp313-cp313t-win_amd64.whl", hash = "sha256:ba852168d814b2c73333073e1c7116d9395bea69575a01b0b3c89d2d5a87c8fb", size = 46112, upload-time = "2025-05-19T14:16:04.909Z" },
     { url = "https://files.pythonhosted.org/packages/84/5d/e17845bb0fa76334477d5de38654d27946d5b5d3695443987a094a71b440/multidict-6.4.4-py3-none-any.whl", hash = "sha256:bd4557071b561a8b3b6075c3ce93cf9bfb6182cb241805c3d66ced3b75eff4ac", size = 10481, upload-time = "2025-05-19T14:16:36.024Z" },
+]
+
+[[package]]
+name = "packaging"
+version = "25.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a1/d4/1fc4078c65507b51b96ca8f8c3ba19e6a61c8253c72794544580a7b6c24d/packaging-25.0.tar.gz", hash = "sha256:d443872c98d677bf60f6a1f2f8c1cb748e8fe762d2bf9d3148b5599295b0fc4f", size = 165727, upload-time = "2025-04-19T11:48:59.673Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/20/12/38679034af332785aac8774540895e234f4d07f7545804097de4b666afd8/packaging-25.0-py3-none-any.whl", hash = "sha256:29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484", size = 66469, upload-time = "2025-04-19T11:48:57.875Z" },
 ]
 
 [[package]]

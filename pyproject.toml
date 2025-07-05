@@ -10,6 +10,7 @@ dependencies = [
     "asyncpg>=0.30.0",
     "fastapi[standard]>=0.115.12",
     "faststream>=0.5.42",
+    "gunicorn>=23.0.0",
     "pottery>=3.0.1",
     "pydantic>=2.11.5",
     "pydantic-settings>=2.9.1",
@@ -19,6 +20,7 @@ dependencies = [
     "tortoise-orm==0.20.0",
     "ujson>=5.10.0",
     "unidecode>=1.4.0",
+    "uvicorn[standard]>=0.34.2",
     "uvloop>=0.21.0",
 ]
 
